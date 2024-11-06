@@ -7,7 +7,7 @@ $title = 'You Will Love This Beautiful Image of Nature';
 $content = 'Content of the article goes here';
 $img = 'https://theartofberlin.com/wp-content/uploads/2024/06/5996049-AHRVPAKW-7.jpg'; // Image URL to be uploaded
 $tags = ['nature', 'lovely']; // List of tags
-$categories = [1, 10]; // Category IDs (e.g., categories with ID 1 and 2)
+$categories = [1, 2]; // Category IDs (e.g., categories with ID 1 and 2), see all IDs in id.php
 
 // Create a new post
 $post_data = [
