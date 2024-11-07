@@ -9,6 +9,12 @@ Articliq is a PHP tool designed to automate the process of creating and publishi
 - **Retrieve WordPress Author and Category IDs** to streamline the posting process.
 - **Automated Posting** of articles and images directly to WordPress, including setting the featured image.
 
+## Requirement
+
+- **Gemini API Key** you can get the Gemini API Key here: https://ai.google.dev/gemini-api/docs
+- **Cloudflare API token and Account ID** to use the REST API, you need your API token and Account ID. Click here: https://developers.cloudflare.com/workers-ai/get-started/rest-api/
+- **WordPress Web** with the access to your hosting control panel.
+
 ## Files
 
 1. **`article.php`** - Generates article titles and content using Gemini AI API.
