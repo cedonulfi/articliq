@@ -11,9 +11,9 @@ Articliq is a PHP tool designed to automate the process of creating and publishi
 
 ## Requirement
 
-- **Gemini API Key** you can get the Gemini API Key here: https://ai.google.dev/gemini-api/docs
-- **Cloudflare API token and Account ID** to use the REST API, you need your API token and Account ID. Click here: https://developers.cloudflare.com/workers-ai/get-started/rest-api/
-- **WordPress Web** with the access to your hosting control panel.
+- **Gemini API Key**: you can get the Gemini API Key here: https://ai.google.dev/gemini-api/docs
+- **Cloudflare API token and Account ID** to use the REST API. Click here: https://developers.cloudflare.com/workers-ai/get-started/rest-api/
+- **WordPress Web** with the access to your server or web hosting control panel.
 
 ## Files
 
