@@ -6,7 +6,7 @@ $API_KEY = "YOUR-API-KEY-HERE";
 $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" . $API_KEY;
 
 // Get the topic from the GET parameter
-$topic = isset($_GET["topic"]) ? htmlspecialchars($_GET["topic"]) : "default topic";
+$topic = isset($_GET["topic"]) ? htmlspecialchars($_GET["topic"]) : "the future of AI";
 $text = "Create an interesting and SEO-friendly article in English about $topic.";
 
 // Data to be sent in the request
@@ -73,5 +73,4 @@ if ($response === false) {
 
 // Close the cURL connection
 curl_close($curl);
-
 ?>
