@@ -1,6 +1,6 @@
-# Articliq
+# ArticliQ
 
-Articliq is a PHP tool designed to automate the process of creating and publishing AI-generated articles and images on WordPress. It uses external APIs to generate unique content and images, then posts them directly to a WordPress blog located in the same directory.
+ArticliQ is a PHP tool designed to automate the process of creating and publishing AI-generated articles and images on WordPress. It uses external APIs to generate unique content and images, then posts them directly to a WordPress blog located in the same directory.
 
 ## Features
 
