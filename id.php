@@ -1,6 +1,6 @@
 <?php
 // Load WordPress environment
-require_once( dirname(__FILE__) . '/new/wp-load.php' );
+require_once( dirname(__FILE__) . '/wp-load.php' );
 
 // Get list of authors
 $authors = get_users([
