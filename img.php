@@ -1,9 +1,6 @@
 <?php
 // Get your Cloudflare Account ID and API Token here: https://developers.cloudflare.com/workers-ai/get-started/rest-api/
 
-// Prompt to generate an image
-$text = $_GET["text"];
-
 // Insert your Account ID and API Token here
 $account_id = "YOUR-ACCOUNT-ID";
 $api_token = "YOUR-API-TOKEN";
@@ -11,8 +8,27 @@ $api_token = "YOUR-API-TOKEN";
 // Set the API URL and the data to be sent
 $url = "https://api.cloudflare.com/client/v4/accounts/{$account_id}/ai/run/@cf/stabilityai/stable-diffusion-xl-base-1.0";
 
+// Prompt to generate an image
+// The variable $title holds the title of the previously generated article.
+// Array containing 10 example prompts
+$prompts = array(
+    "Create a vibrant and detailed illustration capturing the essence of the article titled '\$title'.",
+    "Design an abstract visual representation that embodies the themes and ideas presented in '\$title'.",
+    "Illustrate a scene that reflects the key concepts discussed in the article titled '\$title', using a modern and minimalist style.",
+    "Generate a surreal and imaginative image inspired by the core message of '\$title'.",
+    "Produce a realistic depiction of a pivotal moment or concept from '\$title', emphasizing emotion and atmosphere.",
+    "Create a cartoon-style illustration that highlights the main points of the article '\$title', with a touch of humor.",
+    "Design a conceptual art piece that visually interprets the challenges and solutions presented in '\$title'.",
+    "Illustrate a futuristic and innovative concept related to the article titled '\$title', using a vibrant color palette.",
+    "Generate a nature-inspired image that reflects the environmental themes discussed in '\$title'.",
+    "Create a digital painting that captures the historical context and significance of the events described in '\$title'."
+);
+
+// Select a random prompt from the array
+$randomPrompt = $prompts[array_rand($prompts)];
+
 $data = array(
-    'prompt' => "$text"
+    'prompt' => "$randomPrompt"
 );
 
 // Convert data to JSON format
