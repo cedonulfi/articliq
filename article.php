@@ -5,7 +5,7 @@ $API_KEY = "YOUR-API-KEY-HERE";
 // API URL
 $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" . $API_KEY;
 
-// Get the topic from the GET parameter
+// Get the topic from the POST parameter
 $topic = isset($_POST["topic"]) ? htmlspecialchars($_POST["topic"]) : "the future of AI";
 $text = "Create an interesting and SEO-friendly article in English about $topic.";
 
