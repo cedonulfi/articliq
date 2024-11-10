@@ -1,4 +1,5 @@
 <?php
+// Get the base64 image code from img.php
 // Place the base64 string of the image to be uploaded
 $base64_string = 'data:image/png;base64,....'; // Replace this with your actual base64 string
 
