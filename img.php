@@ -72,4 +72,7 @@ if ($responsei) {
     // Display a message if the response is empty
     echo 'Empty response or an error occurred while fetching the image.';
 }
+
+// Note: The base64 code of this image will be uploaded to WordPress.
+
 ?>
