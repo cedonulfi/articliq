@@ -1,0 +1,4 @@
+<?php
+// Auto topic creation
+
+?>
